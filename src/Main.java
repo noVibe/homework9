@@ -61,6 +61,7 @@ public class Main {
             }
             arrayTask3[i] += 1;
         }
+        System.out.println(Arrays.toString(arrayTask3));
 
     }
 }
