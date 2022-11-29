@@ -25,7 +25,7 @@ public class Main {
         arrayString = Arrays.toString(thirdArray);
         inversionForAnyArray(arrayString);
 
-//        =====Task 4=====
+//        ======Task 4======
         System.out.println("=====Task 3=====");
         for (int i = 0; i < firstArray.length; i++) {
             if (firstArray[i] % 2 == 0) {
