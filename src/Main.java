@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-//   =====Task 1, 2 combined=====
+//   =====Task 1, 2 3combined=====
 
         int[] firstArray = new int[3];
         for (int i = 0; i < firstArray.length; i++) {
@@ -25,7 +25,7 @@ public class Main {
         arrayString = Arrays.toString(thirdArray);
         inversionForAnyArray(arrayString);
 
-//        =====Task 3=====
+//        =====Task 4=====
         System.out.println("=====Task 3=====");
         for (int i = 0; i < firstArray.length; i++) {
             if (firstArray[i] % 2 == 0) {
@@ -36,10 +36,11 @@ public class Main {
         System.out.println(Arrays.toString(firstArray));
 
     }
+    // Method of Task 3
     private static void inversionForAnyArray(String arrayString) {
         StringBuilder result = new StringBuilder();
         String symbolsRemoved = arrayString.replace(",", "").replace("]", "").replace("[", "");
-        String[] arrayStringSplit = symbolsRemoved.split("\\s+");
+        String[] arrayStringSplit = symbolsRemoved.split("\\s");
         for (int i = arrayStringSplit.length - 1; i >=0 ; i--) {
             if (i == arrayStringSplit.length - 1){
                 result.append("[");
