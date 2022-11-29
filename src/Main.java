@@ -35,6 +35,20 @@ public class Main {
         }
         System.out.println(Arrays.toString(firstArray));
 
+//      ===== Bonus tasks 8 and 9 combined ====
+        System.out.println("===== Bonus tasks 8 and 9 combined ====");
+        int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
+        Arrays.sort(arr);
+        for (int i = 0, j = arr.length - 1; i != j; ) {
+            if (arr[i] + arr[j] < -2){
+                i++;
+            } else if (arr[i] + arr[j] > -2) {
+                j--;
+            } else {
+                System.out.println(arr[i] + ", " + arr[j]);
+                i++; //To gain only single pair of numbers replace i++ with break
+            }
+        }
     }
     // Method of Task 3
     private static void inversionForAnyArray(String arrayString) {
