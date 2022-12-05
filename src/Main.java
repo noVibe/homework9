@@ -18,12 +18,10 @@ public class Main {
 
 //      =====Task 3=====
         System.out.println("=====Task 3=====");
-        String arrayString = Arrays.toString(firstArray);
-        inversionForAnyArray(arrayString);
-        arrayString = Arrays.toString(secondArray);
-        inversionForAnyArray(arrayString);
-        arrayString = Arrays.toString(thirdArray);
-        inversionForAnyArray(arrayString);
+
+        inversionForAnyArray(Arrays.toString(firstArray));
+        inversionForAnyArray(Arrays.toString(secondArray));
+        inversionForAnyArray(Arrays.toString(thirdArray));
 
 //        ======Task 4======
         System.out.println("=====Task 3=====");
@@ -54,7 +52,7 @@ public class Main {
     // Method of Task 3
     private static void inversionForAnyArray(String arrayString) {
         String symbolsRemoved = arrayString.replace(",", "").replace("]", "").replace("[", "");
-        String[] arrayStringSplit = symbolsRemoved.split("\\s");
+        String[] arrayStringSplit = symbolsRemoved.split(" ");
         Collections.reverse(Arrays.asList(arrayStringSplit));
         System.out.println(Arrays.asList(arrayStringSplit));
     }
