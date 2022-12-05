@@ -40,7 +40,7 @@ public class Main {
         int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         Arrays.sort(arr);
         for (int i = 0, j = arr.length - 1; i != j; ) {
-            if (arr[i] + arr[j] < -2){
+            if (arr[i] + arr[j] < -2) {
                 i++;
             } else if (arr[i] + arr[j] > -2) {
                 j--;
@@ -50,6 +50,7 @@ public class Main {
             }
         }
     }
+
     // Method of Task 3
     private static void inversionForAnyArray(String arrayString) {
         String symbolsRemoved = arrayString.replace(",", "").replace("]", "").replace("[", "");
